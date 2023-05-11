@@ -15,10 +15,12 @@ public class DataHelper {
     private DataHelper() {}
 
     public static AuthInfo getAuthInfo() {
+
         return new AuthInfo ("vasya", "qwerty123");
     }
 
     private static String generateLogin() {
+
         return faker.name().username();
     }
 

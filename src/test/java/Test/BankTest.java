@@ -19,10 +19,13 @@ public class BankTest{
     @Test
     void shouldSuccessfullyLogin() {
 
-        open("http://localhost:9999");
-        var loginPage = new LoginPage();
+
+        var loginPage = open("http://localhost:9999/", LoginPage.class);
         var authInfo = DataHelper.getAuthInfo();
-        var authCodePage = loginPage.validLogin(authInfo);
+        var verificationPage = loginPage.validLogin(authInfo);
+        verificationPage.verifyAuthCodePageVisibility();
+        var verificationCode = SQLHelper.getVerificationCode();
+        verificationPage.validVerify(verificationCode.getCode());
 
     }
 }
