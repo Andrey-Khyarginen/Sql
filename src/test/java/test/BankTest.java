@@ -1,13 +1,12 @@
-package Test;
+package test;
 
-import Data.DataHelper;
-import Data.SQLHelper;
-import Page.LoginPage;
+import data.DataHelper;
+import data.SQLHelper;
+import page.LoginPage;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static Data.SQLHelper.cleanDataBase;
+import static data.SQLHelper.cleanDataBase;
 import static com.codeborne.selenide.Selenide.open;
 
 public class BankTest{

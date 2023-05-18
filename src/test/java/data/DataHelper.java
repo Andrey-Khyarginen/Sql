@@ -1,6 +1,6 @@
-package Data;
+package data;
 
-
+import lombok.Data;
 import com.github.javafaker.Faker;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

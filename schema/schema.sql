@@ -36,17 +36,3 @@ CREATE TABLE card_transactions
     amount_in_kopecks INT         NOT NULL,
     created           TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
